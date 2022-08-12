@@ -1,0 +1,1 @@
+docker build -t jontavpess/ds-jupyter-lab-image -f ./config/jupyter_lab.Dockerfile .

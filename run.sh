@@ -1,0 +1,1 @@
+winpty docker run --name jupyter-lab -v ${PWD}/data:/mnt/data -p 8889:8889 jontavpess/ds-jupyter-lab-image
