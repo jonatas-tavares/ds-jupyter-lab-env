@@ -11,9 +11,9 @@ services:
   #      - ./notebooks:/mnt/notebooks/
         
   jupyter-lab:
-    image: jontavpess/ds-jupyter-lab-image
-    hostname: jupyter-lab
-    container_name: jupyter-lab
+    image: jontavpess/jupyter-lab-r
+    hostname: jupyter-lab-r
+    container_name: jupyter-lab-r
     ports:
       - 8889:8889
     volumes:

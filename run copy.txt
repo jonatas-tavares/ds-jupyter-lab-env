@@ -1,5 +1,0 @@
-docker build -t jupyter-lab-image -f ./config/jupyter_lab.Dockerfile .
-
-#docker run -ti -v ./:/usr/local/bin/jpl -p 8888:8888 jupyter-lab-image
-
-#docker run --name jupyter-lab -v ./notebooks:/usr/local/bin/jpl/notebooks -w /usr/local/bin/jpl/notebooks -p 8888:8888 jupyter-lab-image
