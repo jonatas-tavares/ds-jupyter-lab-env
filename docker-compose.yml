@@ -1,0 +1,24 @@
+version: '3' 
+services:
+
+  # jupyter-notebook:
+  #   image: jontavpess/ds-jupyter-env:1.0
+  #   hostname: jupyter-notebook
+  #   container_name: jupyter-notebook
+  #   ports:
+  #     - 8888:8888
+  #   volumes:
+  #      - ./notebooks:/mnt/notebooks/
+        
+  jupyter-lab:
+    image: jontavpess/jupyter-lab-r
+    hostname: jupyter-lab-r
+    container_name: jupyter-lab-r
+    ports:
+      - 8889:8889
+    volumes:
+       - ./data:/mnt/data
+    deploy:
+      resources:
+        limits:
+          memory: 1g
